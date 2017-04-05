@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v0="http://bes.huawei.com/interface/billing/v0.1" xmlns:v01="http://bes.huawei.com/schema/base-type/v0.1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v0:AdjustmentRspMsg>
+         <v0:rspHeader>
+            <v01:returnCode>0</v01:returnCode>
+            <!--Optional:-->
+            <v01:returnMsg>0</v01:returnMsg>
+            <!--Zero or more repetitions:-->
+            <v01:property>
+               <v01:id>1</v01:id>
+               <!--Optional:-->
+               <v01:value>12</v01:value>
+            </v01:property>
+         </v0:rspHeader>
+         <!--Optional:-->
+         <v0:rspBody>
+            <v0:accountId>13</v0:accountId>
+            <!--Zero or more repetitions:-->
+            <v0:balanceChangeInformation>
+               <!--Optional:-->
+               <v0:balanceInstanceId>12</v0:balanceInstanceId>
+               <v0:balanceTypeCode>33</v0:balanceTypeCode>
+               <!--Optional:-->
+               <v0:balanceTypeName>133</v0:balanceTypeName>
+               <v0:oldBalanceAmount>76</v0:oldBalanceAmount>
+               <v0:newBalanceAmount>78</v0:newBalanceAmount>
+               <v0:currency>12</v0:currency>
+            </v0:balanceChangeInformation>
+            <!--Zero or more repetitions:-->
+            <v0:freeUnitChangeInformation>
+               <!--Optional:-->
+               <v0:freeUnitInstanceId>1</v0:freeUnitInstanceId>
+               <v0:freeUnitTypeCode>3</v0:freeUnitTypeCode>
+               <!--Optional:-->
+               <v0:freeUnitTypeName>2</v0:freeUnitTypeName>
+               <v0:oldAmount>44</v0:oldAmount>
+               <v0:newAmount>48</v0:newAmount>
+               <v0:measureUnit>14</v0:measureUnit>
+            </v0:freeUnitChangeInformation>
+            <!--Zero or more repetitions:-->
+            <v0:creditChangeInformation>
+               <!--Optional:-->
+               <v0:creditLimitId>3</v0:creditLimitId>
+               <v0:creditLimitType>21</v0:creditLimitType>
+               <v0:oldAmount>00</v0:oldAmount>
+               <v0:newAmount>88</v0:newAmount>
+               <v0:currency>12</v0:currency>
+            </v0:creditChangeInformation>
+         </v0:rspBody>
+      </v0:AdjustmentRspMsg>
+   </soapenv:Body>
+</soapenv:Envelope>
